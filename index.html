@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JOSHUA MUSIC HUB</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="app">
+  <aside>
+    <div class="brand"><span>♫</span><div>JOSHUA<br>MUSIC HUB</div></div>
+    <nav>
+      <button class="active" data-source="all">⌂ Home</button>
+      <button data-source="youtube">▶ YouTube</button>
+      <button data-source="spotify">● Spotify</button>
+    </nav>
+    <div class="side-note">Updated music search<br>from YouTube + Spotify</div>
+  </aside>
+
+  <main>
+    <header>
+      <div>
+        <h1>Music Hub</h1>
+        <p>Search current music in one place.</p>
+      </div>
+      <div class="status" id="status">Ready</div>
+    </header>
+
+    <section class="search">
+      <input id="query" placeholder="Search song, artist, album..." autocomplete="off">
+      <button id="searchBtn">Search</button>
+    </section>
+
+    <section class="chips">
+      <button data-source="all" class="chip active">All</button>
+      <button data-source="youtube" class="chip">YouTube</button>
+      <button data-source="spotify" class="chip">Spotify</button>
+    </section>
+
+    <section id="notice" class="notice hidden"></section>
+    <section id="results" class="results">
+      <div class="empty">
+        <div class="big">♫</div>
+        <h2>Find your next track</h2>
+        <p>Search by title, artist, remix, playlist item or album.</p>
+      </div>
+    </section>
+  </main>
+</div>
+<script src="/static/app.js"></script>
+</body>
+</html>
